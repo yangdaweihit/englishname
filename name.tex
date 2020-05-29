@@ -1,0 +1,76 @@
+\documentclass[UTF8,a4paper]{article}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{marvosym}
+\usepackage{cprotect}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[top=2.5cm,bottom=2.5cm,marginparwidth=2cm,vmargin=3cm]{geometry}
+\usepackage[unicode,colorlinks,linkcolor=blue,citecolor=red,bookmarksnumbered,bookmarks=true]{hyperref}
+\usepackage{marginnote}
+\newcommand\mycite[1]{\raisebox{1.0ex}{\zihao{6}\cite{#1}}}
+
+\renewcommand\refname{\center 参考文献}
+
+\renewcommand{\baselinestretch}{1.6}
+\newcommand\note[1]{\marginpar{\zihao{6} \color{red} {#1}}}
+\graphicspath{{figures/}}
+\usepackage{syntonly}
+%\syntaxonly
+\bibliographystyle{unsrt}
+\title{科研文献中的人名}
+\author{杨大伟 \\ {\it yangdawei.hit@gmail.com}}
+
+\date{\today}
+%-----------------------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\section{前言}
+在科研文献中署名和引用人名的规则对我来说一直不是很清楚，于是今天写报告前决定花点时间看看规则。找来《芝加哥风格手册》\mycite{chicago}学习，算是有点清楚了，记下来备忘。文中括号内的数字表示规则在手册中对应的条款。如果你发现我的理解或某些细节有错误\Frowny，请写信教我改正错误\Smiley。
+
+文献\cite{chicago}下载自\url{http://ishare.iask.sina.com.cn/f/6194855.html}。当然如果想买正版，可以访问\url{http://www.chicagomanualofstyle.org/books.html}。
+
+\section{英美人姓名的组成}
+英美人的姓名由三部分组成：名(first name\ 或\ given name)，中间名(second name\ 或\  middle name)，姓(last name\ 或\ surname\ 或\ family name)\mycite{name}\mycite{wiki}。比如美国现任总统奥巴马的全名：
+
+\Pointinghand
+\begin{equation*}
+\underbrace{\bf Barack}_{\color{blue} given\ name} \overbrace{\bf Hussein}^{{\color{blue} second\ name}} \underbrace{\bf Obama}_{\color{blue} family\  name}
+\end{equation*}
+所以我们在学术交流中提到的某位学者，所称的实际上是他的姓。中国人是没有中间名的，故省略掉。对应英美的习惯，我们的名就是given name，姓就是family name。拿我的名字来说应该写为：
+
+\Pointinghand
+\begin{equation*}
+\underbrace{\bf Dawei}_{\color{blue} given\ name} \overbrace{\bf Yang}^{{\color{blue} family\  name}}
+\end{equation*}
+在(18.76)中关于中国人的姓名，手册规定了两种方式：一种即是示例样式；另一种即姓一直在前面，名字（若两个字）中两字之间用短划线，如“Yang Da-wei”。可是手册并没有说明何种情况下用这两种样式。我个人倾向在标题下署名是采用后一种形式，而在文献中采用英美人的习惯。
+
+\section{名字的缩写}
+名字缩写即仅名字仅写首字母(initial)，并以后面跟一个点表示缩写。(17.23)在三个名中，优先缩写的中间名(second name)，其次是名(given name)，姓(family name)一般是不缩写的，比如“Berack H. Obama”或“B. H. Obama”。我的名字缩写应该是“D. Yang”。注意，在缩写字母之间要留有一个空格。
+
+当姓名列于著作封面或题目之下时，一般是按前面提到的顺序写姓名的。但如果把姓名写在参考文献列表中（仅是首位作者）或在文章中引用姓名时，需要将姓提到前面，并在后面跟一个逗号，如“Yang, D.”或“Obama, B. H.”。如果点和逗号也要省掉，那就写成“Yang D”或“Obama BH”。(17.24)我们称这种写法为“反写”（inverted name）。
+
+还有一种情况---即姓全部大写，因此看到全部大写可以马上认出这是他（她）的姓。这是有些期刊采用的办法，因为很难记得清地球上那么多民族的姓氏表达习惯，就干脆把姓大写，方便识别。国外也有复姓，即两个名字合成的姓，表达复姓是两个名字之间加入短划线，如“Abbas Emami-Naeini”。
+
+\section{参考文献中的合作者署名}
+当参考文献中只有一位作者时，则作者名字不缩写。(17.26)
+
+在参考文献中，两位以上作者的姓名连续写出，其中第一位作者姓名反写，其余作者正写。在姓名与姓名之间用逗号隔开，最后一名作者姓名前还要写上“and”。(17.27,17.28,17.29)比如我和奥巴马一同起草了一份中美关系声明，则我们的声明在参考文献中是看起来是这样的：
+
+\Pointinghand {\color{blue}\ \ \ Yang, D.,\ and B. H. Obama.\ 2012.\ Good good study, day day up. 2012} 
+
+如果合作者过多，一般认为列出前三位姓名，以后的作者省略掉，用“et al.”表示。(17.30)另外记一句，在参考文献中各元素之间用点(period)隔开，在笔记中则用逗号隔开。我们在维基中可以看到就是采用逗号隔开各元素的，但大多时候我们采用的是前一种方式。(16.15)
+
+\section{正文中引用人名}
+在正文中引用人名一般是使用姓，即family name。当有作者的姓相同时，才加上名或名的首字母缩写。(16.44)正文引用人名一般出现在文献引用中，文献引用使用的是所谓“作者--日期系统”(author-date system)，即在一对括号中首先写出作者姓，然后是文献出版年，如果需要再给出引用页码，如(Yang 2012)。如果人名出现在正文中，则把人名的姓放在括号前面，如Yang(2012)。(16.4)
+
+\begin{thebibliography}{99}
+\bibitem{chicago} David Spencer. Chiago Manual of Style, 16th Edition. University Chicago Press, 2011.
+\bibitem{name}\url{http://www.behindthename.com/glossary/view/english_names}
+\bibitem{wiki}\url{http://en.wikipedia.org/wiki/English_name}
+\end{thebibliography}
+
+\end{document}
+
